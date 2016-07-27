@@ -7,7 +7,7 @@
         vm.isBlue = true;
     }
     
-    angular.module('presentation', [])
+    angular.module('skytutorial', [])
         .component('bbSimple', {
             template: '<div class="bb-simple-background" ng-class="\'bb-simple-background-blue\': $ctrl.bbSimpleIsBlue"><ng-transclude></ng-transclude></div>',
             controller: angular.noop,
