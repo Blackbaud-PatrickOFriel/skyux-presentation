@@ -10,7 +10,7 @@
     angular.module('presentation', [])
         .component('bbSimple', {
             template: '<div class="bb-simple-background" ng-class="\'bb-simple-background-blue\': $ctrl.bbSimpleIsBlue"><ng-transclude></ng-transclude></div>',
-            controller: Controller,
+            controller: angular.noop,
             bindings: {
                 bbSimpleIsBlue: '<?'
             },
