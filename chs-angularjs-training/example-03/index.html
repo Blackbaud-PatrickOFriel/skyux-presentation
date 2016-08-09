@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html charset="utf-8" ng-app="skytutorial">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My First SKY UX App</title>
+  <link rel="stylesheet" href="https://sky.blackbaudcdn.net/skyux/1.6.7/css/sky-bundle.css">
+  <style>
+      .bb-simple-background {
+        background-color: green;
+      }
+
+      .bb-simple-background.bb-simple-background-blue {
+        background-color: blue;
+      }
+  </style>
+</head>
+<body>
+  <div ng-controller="SimpleTestController as simpleCtrl">
+    <button type="button" class="btn btn-primary" ng-click="simpleCtrl.isBlue = !simpleCtrl.isBlue">Toggle Simple Color</button>
+    
+    <bb-simple bb-simple-is-blue="simpleCtrl.isBlue">
+        <div style="width: 200px; height: 200px">
+            <h2 style="color: white">Simple Content</h2>
+        </div>
+    </bb-simple>
+  </div>
+  <script src="https://sky.blackbaudcdn.net/skyux/1.6.7/js/sky-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
